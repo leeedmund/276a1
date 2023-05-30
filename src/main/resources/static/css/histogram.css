@@ -1,10 +1,100 @@
+html, body, .container
+{
+    height: 95%; 
+    max-width: 100%;
+
+}
+
+
+body {
+    background-color: #A6192E;
+}
+
+#mainpart {
+    background-color: white;
+    max-width: 50%;
+    padding-left: 1em;
+    height: 100%;
+}
+
 h1 {
     font-family:Arial, Helvetica, sans-serif;
     font-weight: normal;
+    padding-top: 0.5em;
 }
 
 h2 {
-    font-family:'Times New Roman', Times, serif;
+    font-family:Cambria, Georgia, 'Times New Roman', serif;
     font-size: large;
     color: #A6192E;
 }
+
+#sec1, #sec2, #sec3{
+    margin: 1em 0;
+    border: 1px solid #d2e1e6;
+    border-radius: 3px 3px 3px 3px;
+    padding-left: 0.8em;
+    background-color: #e9eff1;
+    padding-bottom: 2em;
+}
+
+/* table {
+    border-spacing: 2em 0;
+} */
+
+#sec1 table tr td {
+    /* padding-top: 10px; */
+    padding-left: 2em;
+    padding-right: 5em;
+  }
+
+td{
+    text-align: Left;
+    white-space: nowrap;
+    overflow:hidden;
+}
+
+input[type=number] {
+    width: 60%;
+    padding: 8px;
+    margin: 10px 5px;
+    box-sizing: border-box;  
+    text-align: right;
+    font-family:Cambria, Georgia, 'Times New Roman', serif
+}
+
+#sec3 table {
+    padding-top: 0.5em;
+}
+
+#sec3 table input[type=number] {
+    width: 90%;
+    padding-left: 4em;
+
+}
+
+#sec3 {
+    padding-bottom: 3em;
+}
+
+#sec1 {
+    float: left;
+    height: 83%;
+    width: 45%;
+}
+
+#sec2 {
+    float: right;
+    width: 50%;
+}
+
+#sec3 {
+    float:right;
+    width: 50%;
+}
+
+#sec2, #sec3 {
+    margin-right: 0.8em;
+    padding-left: 0.5em;
+}
+
