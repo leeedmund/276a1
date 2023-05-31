@@ -101,7 +101,8 @@ input[type=number] {
 #sec2 .hist {
     color: #A6192E;
     font-weight: bold;
-    padding: 8px;
+    font-size: large;
+    padding: 6px;
     padding-inline-start: 6em;
 }
 
