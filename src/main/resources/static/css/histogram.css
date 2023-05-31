@@ -2,7 +2,6 @@ html, body, .container
 {
     height: 95%; 
     max-width: 100%;
-
 }
 
 
@@ -30,7 +29,6 @@ h2 {
 }
 
 #sec1, #sec2, #sec3{
-    margin: 1em 0;
     border: 1px solid #d2e1e6;
     border-radius: 3px 3px 3px 3px;
     padding-left: 0.8em;
@@ -38,15 +36,10 @@ h2 {
     padding-bottom: 2em;
 }
 
-/* table {
-    border-spacing: 2em 0;
-} */
-
 #sec1 table tr td {
-    /* padding-top: 10px; */
     padding-left: 2em;
     padding-right: 5em;
-  }
+}
 
 td{
     text-align: Left;
@@ -74,7 +67,7 @@ input[type=number] {
 }
 
 #sec3 {
-    padding-bottom: 3em;
+    padding-bottom: 1em;
 }
 
 #sec1 {
@@ -86,15 +79,38 @@ input[type=number] {
 #sec2 {
     float: right;
     width: 50%;
+    height:50%;
 }
 
 #sec3 {
     float:right;
     width: 50%;
+    margin-top: 1em;
+    height: 29%;
 }
 
 #sec2, #sec3 {
     margin-right: 0.8em;
     padding-left: 0.5em;
+}
+
+#sec2 table {
+    padding-left: 2em;
+}
+
+#sec2 .hist {
+    color: #A6192E;
+    font-weight: bold;
+    padding: 8px;
+    padding-inline-start: 6em;
+}
+
+#sec3 .error-msg {
+    font-weight: bold;
+}
+
+p {
+    font-weight: bold;
+    padding-left: 2px;
 }
 

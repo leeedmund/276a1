@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/histogram.css">
+    <script src="/js/calculate.js" defer></script>
 </head>
 <body>
     <!-- REFERENCE GUIDE: SFU Style Guide and SFU GPA Calculator -->
@@ -14,28 +15,43 @@
         <section id="sec1">
             <h2>Lower bounds</h2>
             <table>            
-                <tr><td>Max:</td><td><input type="number" value="100.00"></td></tr>
-                <tr><td>A+:</td><td><input type="number" value="95.00"></td></tr>
-                <tr><td>A:</td><td><input type="number" value="90.00"></td></tr>
-                <tr><td>A-:</td><td><input type="number" value="85.00"></td></tr>
-                <tr><td>B+:</td><td><input type="number" value="80.00"></td></tr>
-                <tr><td>B:</td><td><input type="number" value="75.00"></td></tr>
-                <tr><td>B-:</td><td><input type="number" value="70.00"></td></tr>
-                <tr><td>C+:</td><td><input type="number" value="65.00"></td></tr>
-                <tr><td>C:</td><td><input type="number" value="60.00"></td></tr>
-                <tr><td>C-:</td><td><input type="number" value="55.00"></td></tr>
-                <tr><td>D:</td><td><input type="number" value="50.00"></td></tr>
-                <tr><td>F:</td><td><input type="number" value="0.00"></td></tr>
+                <tr><td>Max:</td><td><input type="number" id="Max" value="100.00"></td></tr>
+                <tr><td>A+:</td><td><input type="number" id="A+" value="95.00"></td></tr>
+                <tr><td>A:</td><td><input type="number" id="A" value="90.00"></td></tr>
+                <tr><td>A-:</td><td><input type="number" id="A-" value="85.00"></td></tr>
+                <tr><td>B+:</td><td><input type="number" id="B+" value="80.00"></td></tr>
+                <tr><td>B:</td><td><input type="number" id="B" value="75.00"></td></tr>
+                <tr><td>B-:</td><td><input type="number" id="B-" value="70.00"></td></tr>
+                <tr><td>C+:</td><td><input type="number" id="C+" value="65.00"></td></tr>
+                <tr><td>C:</td><td><input type="number" id="C" value="60.00"></td></tr>
+                <tr><td>C-:</td><td><input type="number" id="C-" value="55.00"></td></tr>
+                <tr><td>D:</td><td><input type="number" id="D" value="50.00"></td></tr>
+                <tr><td>F:</td><td><input type="number" id="F" value="0.00"></td></tr>
             </table>
 
         </section>
         <section id="sec2">
             <h2>Histogram</h2>
+            <table>            
+                <tr><td>A+:</td><td class="hist"></td></tr>
+                <tr><td>A:</td><td class="hist"></td></tr>
+                <tr><td>A-:</td><td class="hist"></td></tr>
+                <tr><td>B+:</td><td class="hist"></td></tr>
+                <tr><td>B:</td><td class="hist"></td></tr>
+                <tr><td>B-:</td><td class="hist"></td></tr>
+                <tr><td>C+:</td><td class="hist"></td></tr>
+                <tr><td>C:</td><td class="hist"></td></tr>
+                <tr><td>C-:</td><td class="hist"></td></tr>
+                <tr><td>D:</td><td class="hist"></td></tr>
+                <tr><td>F:</td><td class="hist"></td></tr>
+            </table>
         </section>
         <section id="sec3">
+            <!-- <form></form> -->
             <table>            
                 <tr><td>New Grade:</td><td><input type="number"></td></tr>
             </table>
+            <p id="error-msg"></p>
         </section>
     </main>
     <footer>
