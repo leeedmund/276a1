@@ -5,7 +5,7 @@ var grades = [65.95, 56.98, 78.62, 96.1, 90.3, 72.24, 92.34, 60.00, 81.43, 86.22
     49.93, 52.34, 53.11, 50.10, 88.88, 55.32, 55.69, 61.68, 70.44, 70.54, 90.0, 71.11, 80.01];
 
 var max = document.getElementById('Max');
-var aplus =document.getElementById("A+");
+var aplus = document.getElementById("A+");
 var a = document.getElementById("A");
 var aminus = document.getElementById("A-");
 var bplus = document.getElementById("B+");
@@ -16,6 +16,7 @@ var c = document.getElementById("C");
 var cminus = document.getElementById("C-");
 var d = document.getElementById("D");
 var f = document.getElementById("F");
+
 var lowestLim = 0;
 var currentLow = f.value;
 var message;
@@ -32,11 +33,11 @@ strings.push(aplus.id,a.id,aminus.id,bplus.id,
 // Functions
 
 function compareTo (x, y) {
-    return x > y;
+    return x >= y;
 }
 
 function printMsg() {
-    message = "Bounds must be valid. Only numbers allowed";
+    message = "Please check your lower bounds.";
     document.getElementById("error-msg").innerHTML = message;    
 }
 
