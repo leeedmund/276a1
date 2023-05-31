@@ -69,7 +69,7 @@ function generateHistogram() {
             var tempVal = count[i];
             var space = "";
             for (let j = 0; j < tempVal; j++) {
-                space = space + "X";
+                space = space + "●";
             }
             listOfHist[i].innerHTML = space;
         }
